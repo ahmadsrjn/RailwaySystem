@@ -1,0 +1,45 @@
+.book-box{
+  margin-top: 2%;   
+  font-size: 30px;
+  font-family:'Courier New', Courier, monospace;
+  
+}
+body{
+
+    background-color: #6a93cb;
+    background-image: linear-gradient(315deg, #6a93cb 0%, #a4bfef 74%);
+}
+.cont{
+    width: 40%;
+    margin-top:3%;
+    border-radius: 2%;
+    border: 1px solid lightblue;
+
+}
+.frm{
+    margin-top: 4%;
+}
+.custom-control-input{
+    zoom: 1.5;
+}
+input[type=checkbox]{
+    zoom: 1;
+}
+label{
+    font-size: 17px;
+    color:darkblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.btn-block{
+    margin-top: 2%;
+}
+.cont2{
+    margin-top:2%;
+    border:none;
+}
+th{
+    text-align: center;
+}
+#showtable{
+        display: none;
+}

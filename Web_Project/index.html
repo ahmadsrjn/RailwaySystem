@@ -1,0 +1,234 @@
+<!Doctype html>
+<html lang="en">
+    <script src="Plugins/angular.min.js"></script>
+    <script src="Plugins/jquery-3.3.1.min.js"></script>
+    <script src="Bootstrap/js/bootstrap.js"></script>
+   
+      
+    <head>
+        <link rel="stylesheet" href="Bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <link rel="icon" href="Icon images/download1.ico" type="image/x-icon">
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Railway Reservation System</title>
+        
+    </head>
+    <body onload="CaptchaGenerator();">
+      <div class="whole-page">
+      <header>
+           <div class="heading">
+              <img src="Icon images/images6.png" alt="logo" width="4%" height="4%" style="margin-left:10px;">
+               <h4 style="margin-left:10px;margin-top:10px;border-left: 0px">Indian Railway Reservation System<br> <p>  A Government of India Enterprise</p></h4>
+              
+               <h4 style="margin-top:10px;padding-left: 8px;">Center for Railway Information Systems <p>(Ministry of Govt. of India)</p></h4>
+               </div>
+       </header>
+       <div class="info"> 
+           <ul class="info-li">
+               
+               <li id="t"></li>
+               <li><a href="Contact us.html">Contact Us</a></li>
+               <li><a href="#">Feedback</a></li>
+               <li><a href="index.html" ><span class="glyphicon glyphicon-home"></span></a></li>
+               
+           </ul>
+       </div>
+       <div class="nav-bar">
+        <ul>
+            <li><a href="BookTickets.html" target="_blank">Bookings</a> </li>
+            <li><a href="#">Cancellation</a> </li>
+            <li><a href="#">Booked-History</a> </li>
+            <li><a href="#">Refund</a> </li>
+            <li><a href="BookTickets.html">Search-Train</a> </li>
+            <li><a href="#">Accomodation</a> </li>
+            <li><a href="BookTickets.html">Plan-my-Journey</a> </li>
+            <li><a href="#">Food-on-track</a> </li>
+            <li><a href="#">Counter-Ticket-Cancellation</a> </li>
+            <li><a href="signup.html" target="_blank">SignUp</a> </li>
+            
+            
+        </ul>
+       </div>
+       <div class="backimage">
+          <div class="image-text"><h1>INDIAN RAILWAYS</h1>
+            <p class="img-details">Safety | Security | Puctuality</p></div> 
+       </div>
+       <button id="butt" type="button" value="BookTickets" ><a href="BookTickets.html" style="color:white" target="_blank">BookTickets</a></button>
+       <button id="butt" type="button" value="BookTickets" style="margin-left:8%;"><a href="pnr.html" style="color:white" target="_blank">PNR-Status</a></button>
+       <marquee direction="left" style="font-size:15px;margin-top:4px;font-weight: 600">Please help Indian railways and government of India in moving towards a digitized and cashless economy. Eradicate black money.</marquee>
+       <div class="sidebar">
+
+        <div class="sidemenu">
+            <button class="drpbutt">Services <span class="glyphicon glyphicon-chevron-down"></span> </button>
+            <div class="drpcont">
+                <a href="Moblile Ticketing.html" target="_blank">Moble Ticketing Services</a>
+                <a href="SMS service.html">SMS Services</a>
+                <a href="https://enquiry.indianrail.gov.in/ntes/index.html" target="_blanks">Nationali Train Enquiry System</a>
+            </div>
+          <a href="#">Train Type Information</a>
+          <a href="#">Catering Chargers</a>
+          <a href="#">View Codes</a>
+          <a href="tatkalscheme.html">Tatkal Scheme</a>
+          <a href="#">Rules</a>
+          <a href="#">International Tourist</a>
+          <a href="pnr.html">PNR Enquiry</a>
+          <a href="#">Route</a>
+          <a href="#">Other Railway Websites</a>
+        
+          
+        </div>
+        <script>
+                $(document).ready(function(){
+                 $(".drpbutt").click(function(){
+                $(".drpcont").toggle(800,"swing");
+                 });
+                });
+
+               /* $(window).bind('scroll', function () {
+    if ($(window).scrollTop() > 50) {
+        $('.nav-bar').addClass('fixed');
+    } else {
+        $('.nav-bar').removeClass('fixed');
+    }
+});*/
+                </script>
+        <div class="login">
+            
+<form action="method.php" name="myform" onsubmit="Validatelogin();" method="POST">
+ <legend> Login <span class="glyphicon glyphicon-user"></span></legend>
+ <center><p id="error"></p></center> 
+  <center> <table>
+       <tr>
+           <td>
+              <td><input type="text" placeholder="Userid" id="User" tabindex="1" autofocus></td>
+           </td>
+       </tr>
+       <tr>
+           <td>
+             <td><input type="Password" placeholder="password" id="pass" tabindex="2"></td> 
+           </td>
+       </tr>
+       <tr>
+           <td> <td><input type="text"  id="txtInput" placeholder="Given below" tabindex="3"></td></td>
+       </tr>
+       <tr><td><td><p class="captchastyle">Captcha letters are case Sensitives <sup style="color:red;font-weight:700">*</sup></p></td></td></tr>
+<tr>
+
+   <td> <td><input type="text" id="mainCaptcha" style="border:none;font-size: 17px;"></td></td>
+</tr>
+<tr>
+
+    <td> <td><input tabindex="4" type="button" id="refresh" value="Refresh" onclick="CaptchaGenerator();" ><input type="button" name="submit" id="log" tabindex="5" value="Login" onclick="login();"></td></td>
+ </tr>
+    </table> </center>
+    
+</form>
+        </div>
+        <div class="alert-updates">
+          <div class="headingalert">Alerts and Updates <span class="glyphicon glyphicon-bell "></span></div>
+             <div class="text">User are requested to delete browser cookies/cache if facing login problem or logout issue.</div>
+            <div class="text">E-ticket- In case of a train Cancellation, for E-ticket full refund will be granted automatically by the system.</div>
+            <div class="text">Frequency Reduction/Cancellation plan for Mail/Express Train to deal with upcoming FOGGY season 2018.</div>
+            <div class="text">Booking and Cancellation for the trains origining from Delhi node will be available from 00:20 hrs to 03:45 hrs.</div>
+           
+            <div class="text">One of the Passenger need to show their to the TT at the time Verification of seat.</div>
+            <div class="text">Identification card is not required at the time of booking for tatkal Scheme.</div> 
+            <div class="text">One of the Passenger need to show their to the TT at the time Verification of seat.</div>
+            <div class="text" style="border:none">Identification card is not required at the time of booking for tatkal Scheme.</div> 
+            
+
+        </div>
+       </div>
+       <br>
+       <br>
+       <br>
+      <div class="container-fluid">
+       <div class="row">
+           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"> <center> <a href="https://play.google.com/store/apps/details?id=cris.org.in.prs.ima&hl=en_IN"><img src="Icon images/8220987356084411418.png" alt="AD" class="img-fluid ad" width="1000px"></a></center></div>
+       </div>
+      
+      <br>
+      </div> 
+       <footer>
+         
+      <div class="container-fluid">
+          <div class="row bg-light">
+              <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+            <a href="#" class="btn btn-link btn-block">General Policy</a>
+              <a href="#" class="btn btn-link btn-block">Important Information</a>
+              <a href="#" class="btn btn-link btn-block">Agents</a>
+              <a href="#" class="btn btn-link btn-block">Enquires</a>
+            </div>
+              <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    <a href="#" class="btn btn-link btn-block">How to</a>
+                    <a href="#" class="btn btn-link btn-block">IRRS offical App</a>
+                    <a href="#" class="btn btn-link btn-block">Advertise with us</a>
+                    <a href="#" class="btn btn-link btn-block">Refund Policy</a>
+                </div>
+              <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    <a href="#" class="btn btn-link btn-block">IRRS e-wallet</a>
+                    <a href="#" class="btn btn-link btn-block">IRRS loyalty program</a>
+                    <a href="#" class="btn btn-link btn-block">About us</a>
+                    <a href="#" class="btn btn-link btn-block">IRRS Zone</a>
+                </div>
+              <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    <a href="#" class="btn btn-link btn-block">I-Ticket</a>
+                    <a href="#" class="btn btn-link btn-block">Mobile Zone</a>
+                    <a href="#" class="btn btn-link btn-block">IRRS Prepaid</a>
+                    <a href="#" class="btn btn-link btn-block">Integration Policy</a>
+            </div>
+          </div>
+         
+      </div> 
+      <br>
+      <div class="container-fluid">
+          <div class="row cls">
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+               <center> <img src="icon images/image.png" alt="logo" class="img-logo"></center>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+              
+           <center><h5 class="text-white font-weight-bold" style="margin-top:30px;">Experience Our Services...</h5>
+            <p class="font-italic text-white font-weight-normal"> India has some of the most spectacular and unforgettable rail journeys in the world.
+                There's no better way to enjoy India's outback, cities, coastal towns and regional areas in comfort.</p> </center>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+              <center> <p class="newsletterfont">Subscribe Our Newsletter</p>
+            <p  class="newsletterfont">Get offers and more*</p>
+            <button type="button" class="btn btn-light" style="padding:7px;width:150px">Email</button>
+            <button type="button" class="btn btn-info" style="padding:7px;width:150px">Subscribe</button>
+            <br>
+            <br>
+            <a href="https://www.facebook.com/IRCTCofficial/" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a href="https://twitter.com/IRCTCofficial" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-google"></i></a>
+            <br>
+            <br>
+            </center>
+            
+              
+          </div>
+          </div>
+          <br>
+         <center> <p>We Accept Payment through <i class="fa fa-credit-card" style="font-size:20px"></i></p></center>
+          <div class="container"><img src="icon images/security (1).png" alt="cardlogo" class="img-fluid" width="100%"></div>
+          <hr>
+          <div class="row"><div class="col-xs-12" style="text-align:center">&copy;Copyright 2018 Railway Reservation System- All Rights Reserved</div></div>
+         
+          <br>
+      </div>
+           
+       </footer>
+       <br>
+       <br>
+      </div>
+    
+    <script src="script.js"></script>
+    <script>
+              </script>
+    </body>
+    
+</html>

@@ -1,0 +1,307 @@
+<html lang="en">
+        <script src="Plugins/angular.min.js"></script>
+        <script src="Plugins/jquery-3.3.1.min.js"></script>
+        <script src="Bootstrap/js/bootstrap.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+       
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Plan Your Journey</title>
+    <link rel="icon" href="Icon images/download1.ico" type="image/x-icon">
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="BookTickets.css">
+</head>
+<body>
+    <div class="container bg-white cont">
+
+        <div class="row">
+
+                <div class="col-md-12">
+                    <div class="d-flex justify-content-center book-box">
+                           
+                        
+                              <center><caption>Book Your Tickets</caption> </center>  
+                    </div>
+
+            </div>
+            
+        </div>
+        <div class="row">
+
+                <div class="col">
+                    <div class="d-flex justify-content-center book-box">
+                           
+                        
+                                <img src="rail_icon.png" alt="railIcon" class="image-fluid">
+                    </div>
+
+            </div>
+        </div>
+        <script>
+            function chec(){
+                var a=document.getElementById("frm").values;
+        
+        if(a=="")
+        {
+            alert("fill stations");
+            return false;
+        }
+            }
+        $(document)
+        </script>
+        <div class="row">
+
+                <div class="col">
+                  
+                           
+                        
+                               <form action="#" name="myForm" method="GET">
+                                <input type="text" id="frm" placeholder="From*" class="form-control frm" name="fm"> 
+                                <input type="text" id="To" placeholder="To*" class="form-control frm" name="to" >
+                                <input type="date" id="date" class="form-control frm" name="dt">
+                                <select name="Categories" class="form-control frm" style="padding:2px;font-size:15px">
+                                        <option selected>All Classes</option>
+                                        <option value="Ac first class">AC First Class(1A)</option>
+                                        <option value="Ac secons class">AC Second Class(2A)</option>
+                                        <option value="AC 3">AC 3 Tier(3A) </option>
+                                        <option value="Sleeper">Sleeper(SL)</option>
+                                        <option value="Second Sitting">2S Class</option>
+                                        <option value="Economy">AC 3 Economy</option>
+                                      </select> 
+                                     <input type="checkbox" style="margin-top:4%"><label for="checkbox">Flexible with date</label> 
+                                     <br>
+                                     <input type="checkbox"><label for="checkbox">Journalist Concession</label> 
+                                       <input type="submit" value="Find Train" class="btn btn-primary btn-block" id="showdetails" onclick="chec()">  
+                                       
+                                    </form>
+                               <br>
+                        
+                               
+                    
+
+            </div>
+
+        </div>
+    </div>
+   
+    <div class="container bg-white cont2">
+
+            <div class="row" id="showtable">
+                    <div class="col-xs-12">
+                       <table class="table table-hover" style="text-align:center">
+                        <thead>
+                                <tr>
+                                        <th>Train Name</th>
+                                        <th>Train Number</th>
+                                        <th >Runs from source</th> 
+                                        <th colspan="7">Runs On</th>
+                                  </tr> 
+                                  </thead>
+                                  <tr>
+                                      <td>18101</td>
+                                      <td>Rajdhani Exp.</td>
+                                      <td>NDLS</td>
+                                      <td>
+                                          <td>M</td>
+                                          <td>T</td>
+                                          <td>-</td>
+                                          <td>TH</td>
+                                          <td>F</td>
+                                          <td>S</td>
+                                          <td>S</td>
+                                      </td>
+                                  </tr>
+                        
+                       </table>
+                       <hr>
+                       <br>
+                       <div class="table-responsive">
+                            <table class="table table-hover" style="text-align:center">
+                                    <thead >
+                                         <th>S.No.</th>
+                                        <th>Station Code</th>
+                                        <th>Station Name</th>
+                                        <th>Route NO.</th>
+                                        <th>Arrival Time</th>
+                                        <th>Departure Time</th>
+                                        <th>Halt time(In min.)</th>
+                                        <th>Distance</th>
+                                        <th>Day</th>
+                                    </thead>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>NDLS</td>
+                                        <td>NEW DELHI</td>
+                                        <td>1</td>
+                                        <td>Source</td>
+                                        <td>06:40</td>
+                                        <td>--</td>
+                                        <td>0</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>SNP</td>
+                                        <td>SONIPAT</td>
+                                        <td>1</td>
+                                        <td>7:20</td>
+                                        <td>7:22</td>
+                                        <td>2:00</td>
+                                        <td>45</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                            <td>3</td>
+                                            <td>SNP</td>
+                                            <td>SONIPAT</td>
+                                            <td>1</td>
+                                            <td>7:20</td>
+                                            <td>7:22</td>
+                                            <td>2:00</td>
+                                            <td>45</td>
+                                            <td>1</td>
+                                    </tr>
+                                    <tr>
+                                            <td>4</td>
+                                            <td>SNP</td>
+                                            <td>SONIPAT</td>
+                                            <td>1</td>
+                                            <td>7:20</td>
+                                            <td>7:22</td>
+                                            <td>2:00</td>
+                                            <td>45</td>
+                                            <td>1</td>
+                                    </tr>
+                                    <tr>
+                                            <td>5</td>
+                                            <td>SNP</td>
+                                            <td>SONIPAT</td>
+                                            <td>1</td>
+                                            <td>7:20</td>
+                                            <td>7:22</td>
+                                            <td>2:00</td>
+                                            <td>45</td>
+                                            <td>1</td>
+                                    </tr>
+                                    <tr>
+                                            <td>6</td>
+                                            <td>SNP</td>
+                                            <td>SONIPAT</td>
+                                            <td>1</td>
+                                            <td>7:20</td>
+                                            <td>7:22</td>
+                                            <td>2:00</td>
+                                            <td>45</td>
+                                            <td>1</td>
+                                    </tr>
+                                    <tr>
+                                            <td>7</td>
+                                            <td>SNP</td>
+                                            <td>SONIPAT</td>
+                                            <td>1</td>
+                                            <td>7:20</td>
+                                            <td>7:22</td>
+                                            <td>2:00</td>
+                                            <td>45</td>
+                                            <td>1</td>
+                                    </tr>
+                                    <tr>
+                                            <td>8</td>
+                                            <td>SNP</td>
+                                            <td>SONIPAT</td>
+                                            <td>1</td>
+                                            <td>7:20</td>
+                                            <td>7:22</td>
+                                            <td>2:00</td>
+                                            <td>45</td>
+                                            <td>1</td>
+                                    </tr>
+                                    <tr>
+                                            <td>9</td>
+                                            <td>SNP</td>
+                                            <td>SONIPAT</td>
+                                            <td>1</td>
+                                            <td>7:20</td>
+                                            <td>7:22</td>
+                                            <td>2:00</td>
+                                            <td>45</td>
+                                            <td>1</td>
+                                    </tr>
+                                    <tr>
+                                            <td>10</td>
+                                            <td>SNP</td>
+                                            <td>SONIPAT</td>
+                                            <td>1</td>
+                                            <td>7:20</td>
+                                            <td>7:22</td>
+                                            <td>2:00</td>
+                                            <td>45</td>
+                                            <td>1</td>
+                                    </tr>
+                                    <tr>
+                                            <td>11</td>
+                                            <td>SNP</td>
+                                            <td>SONIPAT</td>
+                                            <td>1</td>
+                                            <td>7:20</td>
+                                            <td>7:22</td>
+                                            <td>2:00</td>
+                                            <td>45</td>
+                                            <td>1</td>
+                                    </tr>
+                                    <tr>
+                                            <td>12</td>
+                                            <td>SNP</td>
+                                            <td>SONIPAT</td>
+                                            <td>1</td>
+                                            <td>7:20</td>
+                                            <td>7:22</td>
+                                            <td>2:00</td>
+                                            <td>45</td>
+                                            <td>1</td>
+                                    </tr>
+                                    <tr>
+                                            <td>13</td>
+                                            <td>SNP</td>
+                                            <td>SONIPAT</td>
+                                            <td>1</td>
+                                            <td>7:20</td>
+                                            <td>7:22</td>
+                                            <td>2:00</td>
+                                            <td>45</td>
+                                            <td>1</td>
+                                    </tr>
+                                    <tr>
+                                            <td>14</td>
+                                            <td>SNP</td>
+                                            <td>SONIPAT</td>
+                                            <td>1</td>
+                                            <td>7:20</td>
+                                            <td>7:22</td>
+                                            <td>2:00</td>
+                                            <td>45</td>
+                                            <td>1</td>
+                                    </tr>
+                                    <tr>
+                                            <td>15</td> 
+                                            <td>ASR</td>
+                                            <td>AMRITSAT JN</td>
+                                            <td>1</td>
+                                            <td>14:25</td>
+                                            <td>--</td>
+                                            <td>--</td>
+                                            <td>448</td>
+                                            <td>1</td>
+                                    </tr>
+                               </table>
+                       </div>
+                      
+                    </div>
+                </div>
+    </div>
+</body>
+</html> 

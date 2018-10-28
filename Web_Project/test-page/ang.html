@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <script src="plugins/angular.min.js"></script>
+</head>
+<body ng-app="myApp" ng-controller="myctrl">
+    <input type="text" ng-model="firstName">
+    <br>
+    <input type="text" ng-model="LastName"><br>
+   <p> Name is:{{firstName +" "+ LastName}}</p>
+    <script>
+    var ap=angular.module('myApp',[]);
+    ap.controller('myctrl',function($scope)
+    
+    {
+        $scope.firstName="Ahmad";
+        $scope.LastName="Sarjaan";
+    });
+    
+    </script>    
+</body>
+</html>

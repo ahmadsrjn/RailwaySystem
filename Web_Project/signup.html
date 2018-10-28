@@ -1,0 +1,76 @@
+<html lang="en">
+        <script src="Plugins/angular.min.js"></script>
+        <script src="Plugins/jquery-3.3.1.min.js"></script>
+        <script src="Bootstrap/js/bootstrap.js"></script>
+        <script src="signup.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="signup.css">
+    <link rel="icon" href="Icon images/download1.ico" type="image/x-icon">
+    <style>
+      
+    </style>
+</head>
+
+<body>
+  
+        
+                <div class="container bg-white">
+                    
+                    <div class="row">
+                        <div class=" col-md-6 col-md-offset-3 ">
+                          <center> <b class="reg">SIGN UP <i class="fa fa-user"></i></b></center>
+                         <hr class="line">
+                            <form method="GET" name="myForm">
+                                <div class="form-group">
+                              <input type="text" id="firstname" name="FirstName" placeholder="FirstName" pattern="[a-zA-Z][a-zA-Z ]{2,}">
+                               <input type="text" id="lststname" name="lstName" placeholder="LastName" pattern="[a-zA-Z][a-zA-Z ]{2,}">
+                                                    
+                                </div>   
+                                <div class="form-group">
+                                    <input type="text" id="user" name="UserName" placeholder="UserName">
+                                    <input type="tel" id="num" name="mob.Number" placeholder="MobNumber">
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" id="email" name="Email" placeholder="Your Email">
+                                    <input type="date" id="DOB" name="DateOB" placeholder="DateOFBIrth">
+                                </div>    
+                                <div class="form-group">
+                                 <input type="password" id="pwd1" name="psswrd1" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"> 
+                                   
+                                 <input type="password" id="pwd2" name="psswrd2" placeholder="Confrim Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+                                
+                                </div>   
+
+                                <div class="row">
+                                    <div class="col-md-6 col-md-offset-2">
+                                        
+                                        <input type="submit" value="Submit" class="btn btn-primary btn-block" onclick="validatesignup()">  
+                                    </div>
+                                </div> 
+
+                            </form>
+                            <div class="row">
+                                <div class="col-md-6 col-md-offset-3">
+                                   <p>Already a member?<a href="#" class="btn btn-active">Login</a></p>
+                                  
+                                </div>
+                            </div>
+                            <p id="signuperr"></p>
+                               <hr style="width:30%" >                     
+                            <hr style="width:70%">
+
+                           
+                        </div>
+                    </div>
+                </div>
+                <script>
+                   
+                    </script>       
+</body>
+</html>

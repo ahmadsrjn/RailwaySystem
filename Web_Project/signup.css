@@ -1,0 +1,46 @@
+body{
+    
+    background-color: #ffffff;
+    background-image: linear-gradient(315deg, #ffffff 0%, #91a6ff 74%);
+    
+    
+
+}
+.container{
+   margin-top: 100px;
+   border-radius: 20px;
+   max-width: 100%;
+   background-color: whitesmoke;
+}
+input[type=text],input[type=email],input[type=tel],input[type=radio],input[type=date],input[type=password]{
+    border: none;
+    border-bottom: 1px solid lightgrey;
+    margin: 6px;
+    margin-left: 50px;
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+input:focus {
+    outline:none;
+}
+.row{
+    margin-top: 10px;
+}
+.reg{
+    color:dimgrey;
+    
+    font-weight: 400;
+    font-size: 30px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    
+    
+
+}
+form{
+    margin-top: 20px;
+}
+hr.line{
+  
+border: 1px solid lightgray;
+}

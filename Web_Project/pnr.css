@@ -1,0 +1,27 @@
+.pnr-head{
+
+    margin-top: 6%;
+    padding: 2px;
+    font-size: 22px;
+    font-weight: 400;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+
+}
+.info-text{
+  margin-top: 2%;
+  font: 500;
+  font-size: 20px;
+}
+.stybut{
+    margin-top: 1%;
+ width: 20%;
+}
+.form-control{
+    width: 50%;
+    border-radius: 10px;
+    font-size: 17px;
+}
