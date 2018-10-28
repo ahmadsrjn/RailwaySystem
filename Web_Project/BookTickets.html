@@ -42,16 +42,12 @@
             </div>
         </div>
         <script>
-            function chec(){
-                var a=document.getElementById("frm").values;
-        
-        if(a=="")
-        {
-            alert("fill stations");
-            return false;
-        }
-            }
-        $(document)
+          
+        $(document).ready(function(){
+         $("#showdetails").click(function(){
+         $("#showtable").show();
+         });
+        });
         </script>
         <div class="row">
 
